@@ -5,9 +5,9 @@ English
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Английский с Стивом | Расширенная версия</title>
+    <title>Английский с Стивом | Полная версия</title>
     <style>
-        /* Все стили остаются такими же как в предыдущей версии */
+        /* Все стили остаются без изменений */
         * {
             margin: 0;
             padding: 0;
@@ -604,32 +604,32 @@ English
                 <div class="level-card" data-level="A1+">
                     <h3>A1+ (Начальный+)</h3>
                     <p>Основы грамматики и лексики</p>
-                    <p>~60 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
                 <div class="level-card" data-level="A2">
                     <h3>A2 (Элементарный)</h3>
                     <p>Простые повседневные ситуации</p>
-                    <p>~70 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
                 <div class="level-card" data-level="B1">
                     <h3>B1 (Средний)</h3>
                     <p>Общение на знакомые темы</p>
-                    <p>~100 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
                 <div class="level-card" data-level="B1+">
                     <h3>B1+ (Средний+)</h3>
                     <p>Более сложные грамматические конструкции</p>
-                    <p>~110 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
                 <div class="level-card" data-level="B2">
                     <h3>B2 (Выше среднего)</h3>
                     <p>Сложные тексты и абстрактные темы</p>
-                    <p>~130 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
                 <div class="level-card" data-level="C1">
                     <h3>C1 (Продвинутый)</h3>
                     <p>Свободное владение языком</p>
-                    <p>~160 уникальных заданий</p>
+                    <p>~10 уникальных заданий</p>
                 </div>
             </div>
         </div>
@@ -729,32 +729,32 @@ English
                     <div class="level-item" data-level="A1+">
                         <h4>A1+</h4>
                         <p>Начальный+</p>
-                        <p>~60 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                     <div class="level-item" data-level="A2">
                         <h4>A2</h4>
                         <p>Элементарный</p>
-                        <p>~70 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                     <div class="level-item" data-level="B1">
                         <h4>B1</h4>
                         <p>Средний</p>
-                        <p>~100 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                     <div class="level-item" data-level="B1+">
                         <h4>B1+</h4>
                         <p>Средний+</p>
-                        <p>~110 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                     <div class="level-item" data-level="B2">
                         <h4>B2</h4>
                         <p>Выше среднего</p>
-                        <p>~130 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                     <div class="level-item" data-level="C1">
                         <h4>C1</h4>
                         <p>Продвинутый</p>
-                        <p>~160 уникальных заданий</p>
+                        <p>~10 уникальных заданий</p>
                     </div>
                 </div>
             </div>
@@ -813,7 +813,7 @@ English
             let questionBank = {};
             let currentTaskType = '';
 
-            // Банк вопросов с увеличенным количеством заданий
+            // Банк вопросов с РЕАЛЬНЫМИ вопросами для всех уровней
             questionBank = {
                 'A1': [
                     // Базовые слова (20 заданий)
@@ -1126,8 +1126,6 @@ English
                 ],
 
                 'A1+': [
-                    // Добавьте 60 заданий для A1+ по аналогии с A1
-                    // Для демонстрации добавим несколько примеров
                     {
                         id: 51, type: 'multiple-choice', question: 'Выберите правильный артикль',
                         explanation: 'Выберите правильный неопределенный артикль',
@@ -1140,95 +1138,371 @@ English
                         content: 'She is ___ doctor.', options: ['a', 'an', 'the', '-'], correct: 0,
                         hintSteps: ['Перед словами, начинающимися с согласного звука, используется "a".']
                     },
-                    // ... добавьте еще 58 заданий для A1+ ...
+                    {
+                        id: 53, type: 'multiple-choice', question: 'Выберите правильный артикль',
+                        explanation: 'Выберите правильный определенный артикль',
+                        content: '___ sun is bright today.', options: ['The', 'A', 'An', '-'], correct: 0,
+                        hintSteps: ['Для уникальных объектов используется "the".']
+                    },
+                    {
+                        id: 54, type: 'multiple-choice', question: 'Выберите правильный предлог',
+                        explanation: 'Выберите правильный предлог места',
+                        content: 'The book is ___ the table.', options: ['on', 'in', 'at', 'under'], correct: 0,
+                        hintSteps: ['Предлог "on" используется, когда что-то находится на поверхности.']
+                    },
+                    {
+                        id: 55, type: 'multiple-choice', question: 'Выберите правильный предлог',
+                        explanation: 'Выберите правильный предлог времени',
+                        content: 'I go to school ___ Monday.', options: ['on', 'in', 'at', 'by'], correct: 0,
+                        hintSteps: ['С днями недели используется предлог "on".']
+                    },
+                    {
+                        id: 56, type: 'multiple-choice', question: 'Выберите правильную форму прилагательного',
+                        explanation: 'Выберите правильную сравнительную степень',
+                        content: 'My car is ___ than yours.', options: ['bigger', 'big', 'biggest', 'more big'], correct: 0,
+                        hintSteps: ['Сравнительная степень прилагательного "big" - "bigger".']
+                    },
+                    {
+                        id: 57, type: 'multiple-choice', question: 'Выберите правильную форму прилагательного',
+                        explanation: 'Выберите правильную превосходную степень',
+                        content: 'This is ___ building in the city.', options: ['the tallest', 'taller', 'tall', 'more tall'], correct: 0,
+                        hintSteps: ['Превосходная степень прилагательного "tall" - "the tallest".']
+                    },
+                    {
+                        id: 58, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное притяжательное местоимение',
+                        content: 'This is ___ book. (мой)', correctAnswer: 'my',
+                        hintSteps: ['Притяжательное местоимение "my" означает "мой".']
+                    },
+                    {
+                        id: 59, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное указательное местоимение',
+                        content: '___ is a pen. (это)', correctAnswer: 'This',
+                        hintSteps: ['Указательное местоимение "this" означает "это" для близкого объекта.']
+                    },
+                    {
+                        id: 60, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Расставьте слова в правильном порядке',
+                        content: 'my / This / is / book', correctAnswer: 'This is my book',
+                        hintSteps: ['Правильный порядок: "This is my book".']
+                    }
                 ],
 
                 'A2': [
-                    // Добавьте 70 заданий для A2
-                    // Примеры:
                     {
-                        id: 121, type: 'multiple-choice', question: 'Выберите правильное время глагола',
+                        id: 61, type: 'multiple-choice', question: 'Выберите правильное время глагола',
                         explanation: 'Выберите правильную форму глагола в Present Continuous',
                         content: 'They ___ football now.', options: ['are playing', 'play', 'plays', 'is playing'], correct: 0,
                         hintSteps: ['Present Continuous используется для действий, происходящих сейчас.']
                     },
-                    // ... добавьте еще 69 заданий для A2 ...
+                    {
+                        id: 62, type: 'multiple-choice', question: 'Выберите правильное время глагола',
+                        explanation: 'Выберите правильную форму глагола в Past Simple',
+                        content: 'Yesterday I ___ to the cinema.', options: ['went', 'go', 'going', 'goes'], correct: 0,
+                        hintSteps: ['Past Simple используется для действий в прошлом.']
+                    },
+                    {
+                        id: 63, type: 'multiple-choice', question: 'Выберите правильное время глагола',
+                        explanation: 'Выберите правильную форму глагола в Future Simple',
+                        content: 'I think it ___ tomorrow.', options: ['will rain', 'rain', 'rains', 'raining'], correct: 0,
+                        hintSteps: ['Future Simple используется для будущих действий.']
+                    },
+                    {
+                        id: 64, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Present Perfect',
+                        content: 'I ___ never ___ to London.', options: ['have, been', 'has, been', 'am, been', 'was, been'], correct: 0,
+                        hintSteps: ['Present Perfect используется для опыта.']
+                    },
+                    {
+                        id: 65, type: 'multiple-choice', question: 'Выберите правильный модальный глагол',
+                        explanation: 'Выберите правильный модальный глагол для выражения возможности',
+                        content: 'I ___ swim when I was five.', options: ['could', 'can', 'may', 'should'], correct: 0,
+                        hintSteps: ['Модальный глагол "could" выражает возможность в прошлом.']
+                    },
+                    {
+                        id: 66, type: 'multiple-choice', question: 'Выберите правильный модальный глагол',
+                        explanation: 'Выберите правильный модальный глагол для выражения совета',
+                        content: 'You ___ see a doctor.', options: ['should', 'can', 'must', 'will'], correct: 0,
+                        hintSteps: ['Модальный глагол "should" выражает совет.']
+                    },
+                    {
+                        id: 67, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное вопросительное слово',
+                        content: '___ is your name?', correctAnswer: 'What',
+                        hintSteps: ['Вопрос о имени обычно задается с помощью слова "What".']
+                    },
+                    {
+                        id: 68, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное наречие частоты',
+                        content: 'I ___ go to the gym. (часто)', correctAnswer: 'often',
+                        hintSteps: ['Наречие "often" означает "часто".']
+                    },
+                    {
+                        id: 69, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Расставьте слова в правильном порядке',
+                        content: 'often / I / to / go / cinema / the', correctAnswer: 'I often go to the cinema',
+                        hintSteps: ['Правильный порядок: "I often go to the cinema".']
+                    },
+                    {
+                        id: 70, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Расставьте слова в правильном порядке',
+                        content: 'did / What / you / do / yesterday?', correctAnswer: 'What did you do yesterday?',
+                        hintSteps: ['Правильный порядок: "What did you do yesterday?".']
+                    }
                 ],
 
                 'B1': [
-                    // Добавьте 100 заданий для B1
-                    // Примеры:
                     {
-                        id: 191, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        id: 71, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
                         explanation: 'Выберите правильную форму глагола в Past Perfect',
                         content: 'She ___ already ___ when I arrived.', options: ['had, left', 'has, left', 'have, left', 'was, leaving'], correct: 0,
                         hintSteps: ['Past Perfect используется для действия, которое произошло до другого действия в прошлом.']
                     },
-                    // ... добавьте еще 99 заданий для B1 ...
+                    {
+                        id: 72, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в условном предложении первого типа',
+                        content: 'If it rains, we ___ at home.', options: ['will stay', 'stay', 'stayed', 'would stay'], correct: 0,
+                        hintSteps: ['Условные предложения первого типа: If + Present Simple, will + инфинитив.']
+                    },
+                    {
+                        id: 73, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Present Perfect Continuous',
+                        content: 'They ___ for three hours.', options: ['have been working', 'have worked', 'are working', 'work'], correct: 0,
+                        hintSteps: ['Present Perfect Continuous используется для действий, которые начались в прошлом и продолжаются до настоящего момента.']
+                    },
+                    {
+                        id: 74, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в пассивном залоге',
+                        content: 'The letter ___ yesterday.', options: ['was sent', 'sent', 'has sent', 'sends'], correct: 0,
+                        hintSteps: ['Пассивный залог в Past Simple: was/were + причастие прошедшего времени.']
+                    },
+                    {
+                        id: 75, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в условном предложении второго типа',
+                        content: 'If I ___ you, I would study more.', options: ['were', 'am', 'was', 'would be'], correct: 0,
+                        hintSteps: ['Условные предложения второго типа: If + Past Simple, would + инфинитив.']
+                    },
+                    {
+                        id: 76, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное относительное местоимение',
+                        content: 'This is the book ___ I bought yesterday.', correctAnswer: 'that',
+                        hintSteps: ['Относительное местоимение "that" используется для определения.']
+                    },
+                    {
+                        id: 77, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильный фразовый глагол',
+                        content: 'I need to ___ ___ my homework. (закончить)', correctAnswer: 'finish up',
+                        hintSteps: ['Фразовый глагол "finish up" означает "закончить".']
+                    },
+                    {
+                        id: 78, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в условном предложении',
+                        content: 'if / I / time / have / will / I / come', correctAnswer: 'If I have time, I will come',
+                        hintSteps: ['Правильный порядок: "If I have time, I will come".']
+                    },
+                    {
+                        id: 79, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в косвенной речи',
+                        content: 'She / said / she / was / tired', correctAnswer: 'She said she was tired',
+                        hintSteps: ['Правильный порядок: "She said she was tired".']
+                    },
+                    {
+                        id: 80, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов с наречием',
+                        content: 'never / He / has / been / to / Paris', correctAnswer: 'He has never been to Paris',
+                        hintSteps: ['Правильный порядок: "He has never been to Paris".']
+                    }
                 ],
 
                 'B1+': [
-                    // Добавьте 110 заданий для B1+
-                    // Примеры:
                     {
-                        id: 291, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        id: 81, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
                         explanation: 'Выберите правильную форму глагола в Passive Voice',
                         content: 'The book ___ by a famous author.', options: ['was written', 'written', 'wrote', 'has written'], correct: 0,
                         hintSteps: ['Passive Voice используется, когда подлежащее испытывает действие.']
                     },
-                    // ... добавьте еще 109 заданий для B1+ ...
+                    {
+                        id: 82, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Past Perfect Continuous',
+                        content: 'They ___ for two hours when I arrived.', options: ['had been waiting', 'have been waiting', 'were waiting', 'waited'], correct: 0,
+                        hintSteps: ['Past Perfect Continuous используется для действия, которое длилось до другого действия в прошлом.']
+                    },
+                    {
+                        id: 83, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Future Perfect',
+                        content: 'By next year, I ___ my degree.', options: ['will have completed', 'will complete', 'complete', 'have completed'], correct: 0,
+                        hintSteps: ['Future Perfect используется для действия, которое завершится к определенному моменту в будущем.']
+                    },
+                    {
+                        id: 84, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в условном предложении третьего типа',
+                        content: 'If I ___ known, I would have helped.', options: ['had', 'have', 'would have', 'has'], correct: 0,
+                        hintSteps: ['Условные предложения третьего типа: If + Past Perfect, would have + причастие прошедшего времени.']
+                    },
+                    {
+                        id: 85, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Future Continuous',
+                        content: 'This time tomorrow, I ___ to London.', options: ['will be flying', 'will fly', 'am flying', 'fly'], correct: 0,
+                        hintSteps: ['Future Continuous используется для действия, которое будет происходить в определенный момент в будущем.']
+                    },
+                    {
+                        id: 86, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильное сослагательное наклонение',
+                        content: 'I suggest that he ___ the meeting.', correctAnswer: 'attend',
+                        hintSteps: ['После глагола "suggest" используется сослагательное наклонение.']
+                    },
+                    {
+                        id: 87, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильный инфинитив',
+                        content: 'She seems ___ the answer.', correctAnswer: 'to know',
+                        hintSteps: ['После глагола "seem" используется инфинитив с to.']
+                    },
+                    {
+                        id: 88, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в сложном предложении',
+                        content: 'Although / he / tired / was / he / working / continued', correctAnswer: 'Although he was tired, he continued working',
+                        hintSteps: ['Правильный порядок: "Although he was tired, he continued working".']
+                    },
+                    {
+                        id: 89, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов с инверсией',
+                        content: 'Never / I / have / such / seen / a / beautiful / place', correctAnswer: 'Never have I seen such a beautiful place',
+                        hintSteps: ['Правильный порядок: "Never have I seen such a beautiful place".']
+                    },
+                    {
+                        id: 90, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в пассивном залоге',
+                        content: 'The / cake / was / by / eaten / the / children', correctAnswer: 'The cake was eaten by the children',
+                        hintSteps: ['Правильный порядок: "The cake was eaten by the children".']
+                    }
                 ],
 
                 'B2': [
-                    // Добавьте 130 заданий для B2
-                    // Примеры:
                     {
-                        id: 401, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        id: 91, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
                         explanation: 'Выберите правильную форму глагола в условном предложении смешанного типа',
                         content: 'If I ___ about the meeting, I would have attended.', options: ['had known', 'have known', 'would know', 'knew'], correct: 0,
                         hintSteps: ['Смешанное условное предложение: условие в Past Perfect, результат в would + инфинитив.']
                     },
-                    // ... добавьте еще 129 заданий для B2 ...
+                    {
+                        id: 92, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Future Perfect Continuous',
+                        content: 'By 2025, I ___ here for 10 years.', options: ['will have been working', 'will work', 'have been working', 'will be working'], correct: 0,
+                        hintSteps: ['Future Perfect Continuous используется для действия, которое будет длиться до определенного момента в будущем.']
+                    },
+                    {
+                        id: 93, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Past Perfect Passive',
+                        content: 'The project ___ by the time we arrived.', options: ['had been completed', 'has been completed', 'was completed', 'completed'], correct: 0,
+                        hintSteps: ['Past Perfect Passive: had been + причастие прошедшего времени.']
+                    },
+                    {
+                        id: 94, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Present Perfect Passive',
+                        content: 'The decision ___ already ___.', options: ['has, been made', 'have, been made', 'was, made', 'is, made'], correct: 0,
+                        hintSteps: ['Present Perfect Passive: have/has been + причастие прошедшего времени.']
+                    },
+                    {
+                        id: 95, type: 'multiple-choice', question: 'Выберите правильную форму глагола',
+                        explanation: 'Выберите правильную форму глагола в Future Passive',
+                        content: 'The new building ___ next year.', options: ['will be built', 'will build', 'is built', 'builds'], correct: 0,
+                        hintSteps: ['Future Passive: will be + причастие прошедшего времени.']
+                    },
+                    {
+                        id: 96, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильную форму герундия',
+                        content: 'I look forward to ___ from you.', correctAnswer: 'hearing',
+                        hintSteps: ['После выражения "look forward to" используется герундий.']
+                    },
+                    {
+                        id: 97, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильную форму инфинитива',
+                        content: 'He is too young ___ drive.', correctAnswer: 'to',
+                        hintSteps: ['После конструкции "too + прилагательное" используется инфинитив с to.']
+                    },
+                    {
+                        id: 98, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в условном предложении смешанного типа',
+                        content: 'If / she / studied / she / would / have / passed / harder', correctAnswer: 'If she had studied harder, she would have passed',
+                        hintSteps: ['Правильный порядок: "If she had studied harder, she would have passed".']
+                    },
+                    {
+                        id: 99, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов с инверсией',
+                        content: 'Not only / he / late / was / but / he / also / forgot / his / books', correctAnswer: 'Not only was he late, but he also forgot his books',
+                        hintSteps: ['Правильный порядок: "Not only was he late, but he also forgot his books".']
+                    },
+                    {
+                        id: 100, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильный порядок слов в сложном предложении',
+                        content: 'Despite / the / rain / we / decided / to / go / for / a / walk', correctAnswer: 'Despite the rain, we decided to go for a walk',
+                        hintSteps: ['Правильный порядок: "Despite the rain, we decided to go for a walk".']
+                    }
                 ],
 
                 'C1': [
-                    // Добавьте 160 заданий для C1
-                    // Примеры:
                     {
-                        id: 531, type: 'multiple-choice', question: 'Выберите правильную идиому',
+                        id: 101, type: 'multiple-choice', question: 'Выберите правильную идиому',
                         explanation: 'Выберите правильное значение идиомы',
                         content: '"To bite the bullet" means:', options: ['to endure a painful experience', 'to eat something hard', 'to attack someone', 'to make a mistake'], correct: 0,
                         hintSteps: ['Идиома "to bite the bullet" означает стойко переносить неприятную или болезненную ситуацию.']
                     },
-                    // ... добавьте еще 159 заданий для C1 ...
+                    {
+                        id: 102, type: 'multiple-choice', question: 'Выберите правильную идиому',
+                        explanation: 'Выберите правильное значение идиомы',
+                        content: '"To break the ice" means:', options: ['to make people feel more comfortable', 'to destroy something', 'to be cold', 'to fall through ice'], correct: 0,
+                        hintSteps: ['Идиома "to break the ice" означает сделать так, чтобы люди чувствовали себя более комфортно в социальной ситуации.']
+                    },
+                    {
+                        id: 103, type: 'multiple-choice', question: 'Выберите правильную идиому',
+                        explanation: 'Выберите правильное значение идиомы',
+                        content: '"To hit the nail on the head" means:', options: ['to describe exactly what is true', 'to make a mistake', 'to be angry', 'to work hard'], correct: 0,
+                        hintSteps: ['Идиома "to hit the nail on the head" означает точно описать суть проблемы или ситуации.']
+                    },
+                    {
+                        id: 104, type: 'multiple-choice', question: 'Выберите правильную идиому',
+                        explanation: 'Выберите правильное значение идиомы',
+                        content: '"To let the cat out of the bag" means:', options: ['to reveal a secret', 'to free an animal', 'to make a mistake', 'to be careless'], correct: 0,
+                        hintSteps: ['Идиома "to let the cat out of the bag" означает раскрыть секрет, обычно случайно.']
+                    },
+                    {
+                        id: 105, type: 'multiple-choice', question: 'Выберите правильную идиому',
+                        explanation: 'Выберите правильное значение идиомы',
+                        content: '"To be over the moon" means:', options: ['to be extremely happy', 'to be crazy', 'to be confused', 'to be tired'], correct: 0,
+                        hintSteps: ['Идиома "to be over the moon" означает быть чрезвычайно счастливым.']
+                    },
+                    {
+                        id: 106, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильную идиому',
+                        content: 'After working for 12 hours, I\'m completely ___.', correctAnswer: 'burned out',
+                        hintSteps: ['Идиома "burned out" означает полное физическое и эмоциональное истощение.']
+                    },
+                    {
+                        id: 107, type: 'fill-blank', question: 'Заполните пропуск',
+                        explanation: 'Вставьте правильную идиому',
+                        content: 'We need to ___ and make a decision.', correctAnswer: 'bite the bullet',
+                        hintSteps: ['Идиома "bite the bullet" означает принять трудное решение или стойко перенести неприятность.']
+                    },
+                    {
+                        id: 108, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильную идиому в предложении',
+                        content: 'the / ice / He / joke / told / a / to / break', correctAnswer: 'He told a joke to break the ice',
+                        hintSteps: ['Правильный порядок: "He told a joke to break the ice".']
+                    },
+                    {
+                        id: 109, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильную идиому в предложении',
+                        content: 'nail / on / the / head / You / hit / the', correctAnswer: 'You hit the nail on the head',
+                        hintSteps: ['Правильный порядок: "You hit the nail on the head".']
+                    },
+                    {
+                        id: 110, type: 'sentence-builder', question: 'Составьте правильное предложение',
+                        explanation: 'Используйте правильную идиому в предложении',
+                        content: 'over / the / moon / She / was / with / her / results', correctAnswer: 'She was over the moon with her results',
+                        hintSteps: ['Правильный порядок: "She was over the moon with her results".']
+                    }
                 ]
             };
-
-            // Для демонстрации заполним остальные уровни базовыми вопросами
-            // В реальном приложении нужно добавить уникальные вопросы для каждого уровня
-            const levels = ['A1+', 'A2', 'B1', 'B1+', 'B2', 'C1'];
-            levels.forEach(level => {
-                if (!questionBank[level] || questionBank[level].length < 10) {
-                    questionBank[level] = [];
-                    // Создаем базовые вопросы для каждого уровня (для демонстрации)
-                    for (let i = 1; i <= 10; i++) {
-                        questionBank[level].push({
-                            id: level.charCodeAt(0) * 100 + i,
-                            type: 'multiple-choice',
-                            question: `Вопрос уровня ${level}`,
-                            explanation: `Это демонстрационный вопрос для уровня ${level}`,
-                            content: `Содержание вопроса ${i} для уровня ${level}`,
-                            options: ['Правильный ответ', 'Неправильный ответ 1', 'Неправильный ответ 2', 'Неправильный ответ 3'],
-                            correct: 0,
-                            hintSteps: [
-                                `Это демонстрационная подсказка для уровня ${level}`,
-                                'В реальном приложении здесь будет настоящее объяснение',
-                                'Правильный ответ: "Правильный ответ"'
-                            ]
-                        });
-                    }
-                }
-            });
 
             // Остальной код остается без изменений
             // Инициализация приложения
